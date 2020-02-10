@@ -1,5 +1,5 @@
 
-#### 基于Docker安装RocketMQ
+#### 基于Docker单节点安装RocketMQ
 
 #### 这里会安装:
   >RocketMQ Server 服务
