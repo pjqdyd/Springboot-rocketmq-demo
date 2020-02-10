@@ -2,6 +2,7 @@
 
 #### 项目结构:
  ```
+  ├─rocketmq-demo       rocketmq收发消息基本案例模块
   ├─docker-rocketmq     docker安装rocketmq文件
   ├─docker-rocketmq.md  docker安装rocketmq方法
   ├─.gitignore          .gitignore文件
@@ -22,3 +23,5 @@
  Topic: 区分消息的种类,一个发送者可以发送消息给一个或多个Topic,一个接收者可以订阅一个或多个Topic消息
  
  Message Queue: 相当于是Topic下的小分区,用于并行发送或接收消息
+ 
+ #### 收发消息的步骤: [基本步骤](./rocketmq-demo/README.md)
