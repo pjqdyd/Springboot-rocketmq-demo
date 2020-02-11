@@ -22,7 +22,7 @@ public class OrderProducer {
         producer.setNamesrvAddr("192.168.141.129:9876"); //2.指定NameServer地址 (宿主机ip:9876)
         producer.start();//3.启动Producer
 
-        for (int i = 0; i < 10; i++){
+        for (int i = 10; i < 20; i++){
             Message message = new Message("order", "tag1", "key"+i, ("Hello World " + i).getBytes());
             /**
              * 参数1: 消息对象
@@ -35,7 +35,7 @@ public class OrderProducer {
                 public MessageQueue select(List<MessageQueue> list, Message message, Object o) {
                     //用业务标识参数订单Id即参数三i与队列数取模, 得到一个固定的队列,
                     //这样每次相同的订单Id就会发往同一队列, 消费时就能保证同一订单的消息的消费顺序
-                    long orderId = (long) o;
+                    int orderId =(int) o;
                     long index = orderId % list.size();
                     return list.get((int) index);
                 }
