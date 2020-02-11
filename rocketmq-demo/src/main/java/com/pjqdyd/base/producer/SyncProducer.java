@@ -7,7 +7,7 @@ import org.apache.rocketmq.common.message.Message;
 import java.util.concurrent.TimeUnit;
 
 /**   
- * @Description:  [同步发送消息的生产者]
+ * @Description:  [同步发送消息的生产者, 可靠]
  * @Author:       pjqdyd
  * @Version:      [v1.0.0]
  */
