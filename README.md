@@ -2,12 +2,14 @@
 
 #### 项目结构:
  ```
-  ├─rocketmq-demo       rocketmq收发消息基本案例模块
-  ├─docker-rocketmq     docker安装rocketmq文件
-  ├─docker-rocketmq.md  docker安装rocketmq方法
-  ├─.gitignore          .gitignore文件
-  ├─README.md           README.md文件
-  └─pom.xml             父pom文件
+  ├─rocketmq-demo                   rocketmq收发消息基本案例模块
+  ├─springboot-rocketmq-producer    springboot整合rocketmq生产者模块
+  ├─springboot-rocketmq-consumer    springboot整合rocketmq消费者模块
+  ├─docker-rocketmq                 docker安装rocketmq文件
+  ├─docker-rocketmq.md              docker安装rocketmq方法
+  ├─.gitignore                      .gitignore文件
+  ├─README.md                       README.md文件
+  └─pom.xml                         父pom文件
  ```
 
 #### RocketMQ 各个角色:
