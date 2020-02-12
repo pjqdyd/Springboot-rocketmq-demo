@@ -22,7 +22,7 @@ public class ProducerTest {
 
     @Test
     public void sendTest(){
-        rocketMQTemplate.convertAndSend("springboot-group", "Hello World!");
+        rocketMQTemplate.convertAndSend("springboot-topic", "Hello World!");
     }
 
 }
